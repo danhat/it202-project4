@@ -1,0 +1,25 @@
+:root{
+  --mdc-theme-primary: #0047b3;
+}
+
+
+a.mdc-list-item.mdc-list-item--activated {
+  color: #0047b3;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  margin-left: 8px;
+}
+
+.view {
+  display: None;
+}
+
+
+
+
+
