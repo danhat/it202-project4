@@ -1,3 +1,10 @@
+<!--
+ * Danielle Hatten
+ * April 2020
+ * Tracking COVID-19 Data Around the World
+ -->
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -15,7 +22,7 @@
     
   
   </head>
-  <body>
+  <body onload="document.querySelector('#mydata').style.display = 'block';">
   
     <aside class="mdc-drawer mdc-drawer--modal">
       <div class="mdc-drawer__content">
@@ -68,14 +75,16 @@
         </button>
           
         <h3>Countries to be charted: </h3>
-
-        <ul id='countries_for_chart'>
-          
-        </ul> 
+        <ul id='countries_for_chart'></ul> 
           
         <button class="mdc-button mdc-button--raised chart-button">
           <div class="mdc-button__ripple"></div>
-          <span class="mdc-button__label">Add Country</span>
+          <span class="mdc-button__label">Show Chart</span>
+        </button>
+          
+        <button class="mdc-button mdc-button--raised table-button">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Show Table</span>
         </button>
       </div>
         
@@ -84,20 +93,32 @@
         
         
       <div class="view" id="mytable">
-      Table
+        <table class="columns">
+          <tr>  
+            <td><div id="table_div" style="border: 1px solid #ccc"></div></td>
+          </tr>
+        </table>
       </div>
         
         
         
         
       <div class="view" id="mychart">
-      Chart
+        <table class="columns">
+          <tr>  
+            <td><div id="linechart_material" style="border: 1px solid #ccc"></div></td>
+            <td><div id="chart_div" style="border: 1px solid #ccc"></div></td>
+            <td><div id="barchart_div" style="border: 1px solid #ccc"></div></td>
+          </tr>
+        </table>
       </div>
         
     </main>
         
     <script src="js/script.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/table.js"></script>
   
   </body>
 </html>
