@@ -9,6 +9,8 @@
     <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+      
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
     
   
@@ -49,23 +51,53 @@
         </section>
       </div>
     </header>
+      
+    
     
     <main class="mdc-top-app-bar--fixed-adjust">
+        
       <div class="view" id="mydata">
-      Data
+        Select a Country to Add:
+        <input id = "country_input" list="country_list">
+        <datalist id="country_list">
+        </datalist> 
+          
+        <button class="mdc-button mdc-button--raised add-button">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Add Country</span>
+        </button>
+          
+        <h3>Countries to be charted: </h3>
+
+        <ul id='countries_for_chart'>
+          
+        </ul> 
+          
+        <button class="mdc-button mdc-button--raised chart-button">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Add Country</span>
+        </button>
       </div>
+        
+        
+        
+        
+        
       <div class="view" id="mytable">
       Table
       </div>
+        
+        
+        
+        
       <div class="view" id="mychart">
       Chart
       </div>
-      
-      
         
     </main>
-  
+        
     <script src="js/script.js"></script>
+    <script src="js/data.js"></script>
   
   </body>
 </html>

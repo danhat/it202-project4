@@ -1,6 +1,8 @@
 
 
+mdc.ripple.MDCRipple.attachTo(document.querySelector('.add-button'));
 
+mdc.ripple.MDCRipple.attachTo(document.querySelector('.chart-button'));
 
 mdc.topAppBar.MDCTopAppBar.attachTo(document.querySelector('header.mdc-top-app-bar'));
       
@@ -23,7 +25,7 @@ item.addEventListener(
     let selected = item.getAttribute('href');
     if (selected == '#mydata') {
       document.querySelector("#mydata").style.display = "block";
-      document.querySelector("#data").style.display = "none";
+      document.querySelector("#mychart").style.display = "none";
       document.querySelector("#mytable").style.display = "none";
     }
     if (selected == '#mytable') {
