@@ -26,12 +26,24 @@ let add_button = document.querySelector('.add-button');
   
 add_button.addEventListener('click', (e) => {
   let to_add = document.querySelector('#country_input').value;
-  console.log(to_add);
   let list = document.querySelector('#countries_for_chart');
   let entry = document.createElement("li");
   entry.setAttribute("id", "selected_country");
   entry.appendChild(document.createTextNode(to_add));
   list.appendChild(entry);
+})
+
+
+let clear_button = document.querySelector('.clear-button');
+  
+clear_button.addEventListener('click', (e) => {  
+  let list = document.querySelector('#countries_for_chart');
+  let items = document.querySelectorAll('#selected_country');
+  
+  // remove items from list
+  for (item of items) {
+    list.removeChild(item);
+  }
 })
 
 
