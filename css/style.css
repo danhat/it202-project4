@@ -2,6 +2,9 @@
   --mdc-theme-primary: #0047b3;
 }
 
+* {
+  font-family: Arial;
+}
 
 a.mdc-list-item.mdc-list-item--activated {
   color: #0047b3;
@@ -29,6 +32,15 @@ td {
   padding-left: 8px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.table-title {
+ padding-left: 10px;
+}
+
+#country-dropdown {
+  max-height: 200px;
+  overflow-y: scroll;
 }
 
 

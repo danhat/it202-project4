@@ -54,7 +54,7 @@ table_button.addEventListener('click', (e) => {
 
     let table = new google.visualization.Table(document.getElementById('table_div'));
 
-    table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+    table.draw(data, {showRowNumber: false, width: '100%', height: '100%'});
   }
     
 })

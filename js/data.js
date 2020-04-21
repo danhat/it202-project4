@@ -14,8 +14,14 @@ fetch(url).then(response => response.json()).then(data => {
 
   for(let i = 0; i < countries.length; i++)
     options += '<option value="' + countries[i]+'" />';
+    
+  /*let links = '';
+  for(let i = 0; i < countries.length; i++) {
+    links += '<a class="dropdown-item" href="#">' + countries[i] + '</a>'
+  }*/
 
   document.querySelector('#country_list').innerHTML = options;
+  //document.querySelector('#country-dropdown').innerHTML = links;
 
   //console.log(countries);
   
