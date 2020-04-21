@@ -100,7 +100,7 @@ chart_button.addEventListener('click', (e) => {
         subtitle: 'since January 22, 2020'
       },
       width: 500,
-      height: 500
+      height: 400
     };
 
     let line_chart = new google.charts.Line(document.getElementById('linechart_material'));
@@ -115,7 +115,7 @@ chart_button.addEventListener('click', (e) => {
     // Set chart options
     let options = {'title':'Confirmed Cases',
                    'width':500,
-                   'height':500};
+                   'height':400};
 
     // Instantiate and draw our chart, passing in some options.
     let chart = new google.visualization.PieChart(document.getElementById('chart_div'));

@@ -47,7 +47,6 @@ table_button.addEventListener('click', (e) => {
         let confirmed = arr[i].confirmed;
         row.push(confirmed);
       };
-      console.log(row);
       data.addRow(row);
 
     };

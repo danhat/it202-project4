@@ -17,7 +17,21 @@ main {
 
 .view {
   display: None;
+  padding-top: 20px;
 }
+
+tr {
+  padding-top: 8px;
+}
+
+td {
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
 
 
 

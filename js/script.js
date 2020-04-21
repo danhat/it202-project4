@@ -6,6 +6,8 @@
 
 mdc.ripple.MDCRipple.attachTo(document.querySelector('.add-button'));
 
+mdc.ripple.MDCRipple.attachTo(document.querySelector('.clear-button'));
+
 mdc.ripple.MDCRipple.attachTo(document.querySelector('.chart-button'));
 
 mdc.ripple.MDCRipple.attachTo(document.querySelector('.table-button'));
